@@ -1,11 +1,15 @@
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <h1>Jasmin</h1>
-      <p>My first React portfolio website.</p>
+      <Hero />
+      <About />
+      <Projects />
     </div>
   );
 }

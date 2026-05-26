@@ -1,7 +1,16 @@
+import "../styles/navbar.css";
+
 function Navbar() {
   return (
-    <nav>
-      <h2>My Portfolio</h2>
+    <nav className="navbar">
+      <h2 className="logo">MyPortfolio</h2>
+
+      <ul className="nav-links">
+        <li>Home</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
     </nav>
   );
 }
