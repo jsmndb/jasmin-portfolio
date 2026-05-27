@@ -32,3 +32,13 @@
   color: #c084fc;
   transform: scale(1.1);
 }
+
+.nav-links a {
+  text-decoration: none;
+  color: #e9d5ff;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c084fc;
+}

@@ -1,5 +1,5 @@
 .about {
-  padding: 100px 20px;
+  padding: 120px 30px;
   text-align: center;
 }
 
@@ -14,4 +14,9 @@
   margin: auto;
   color: #e9d5ff;
   line-height: 1.8;
+}
+
+.about {
+  max-width: 1200px;
+  margin: auto;
 }

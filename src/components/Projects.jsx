@@ -1,25 +1,51 @@
 import "../styles/projects.css";
 
 function Projects() {
+  const projectData = [
+    {
+      title: "Attendance System",
+      description: "A digital attendance tracking system for students.",
+      tech: ["React", "Node.js", "MongoDB"],
+      github: "https://github.com/",
+    },
+
+    {
+      title: "Weather App",
+      description: "A simple weather application using API data.",
+      tech: ["React", "CSS", "API"],
+      github: "https://github.com/",
+    },
+
+    {
+      title: "Portfolio Website",
+      description: "My personal developer portfolio website.",
+      tech: ["React", "CSS"],
+      github: "https://github.com/",
+    },
+  ];
+
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h2>My Projects</h2>
 
       <div className="project-grid">
-        <div className="card">
-          <h3>Project 1</h3>
-          <p>Simple React app</p>
-        </div>
+        {projectData.map((project, index) => (
+          <div className="card" key={index}>
+            <h3>{project.title}</h3>
 
-        <div className="card">
-          <h3>Project 2</h3>
-          <p>Node.js API</p>
-        </div>
+            <p>{project.description}</p>
 
-        <div className="card">
-          <h3>Project 3</h3>
-          <p>MongoDB CRUD app</p>
-        </div>
+            <div className="tech-stack">
+              {project.tech.map((tech, i) => (
+                <span key={i}>{tech}</span>
+              ))}
+            </div>
+
+            <a href={project.github} target="_blank">
+              <button>GitHub</button>
+            </a>
+          </div>
+        ))}
       </div>
     </section>
   );
