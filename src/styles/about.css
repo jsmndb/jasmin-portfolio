@@ -20,3 +20,13 @@
   max-width: 1200px;
   margin: auto;
 }
+
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 20px;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+}
